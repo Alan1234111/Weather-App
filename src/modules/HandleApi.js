@@ -1,7 +1,7 @@
 export default class HandleApi {
   async getWeather(location) {
     try {
-      const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=ef42a1388a804e28b3d173616231803&q=${location}`, {mode: "cors"});
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=ef42a1388a804e28b3d173616231803&q=${location}`, {mode: "cors"});
       const weatherData = await response.json();
 
       const weatherDetails = {};
